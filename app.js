@@ -61,7 +61,7 @@ function campaignAsAttachment(campaign) {
 };
 
 bot.dialog('Help', function (session) {
-    session.endDialog('Try asking me things like \'Find \', \'search hotels near LAX airport\' or \'show me the reviews of The Bot Resort\'');
+    session.endDialog('Try asking me thinks like what is Campaign ID xxxxx or how to set up Campaign or interaction')
 }).triggerAction({
     matches: 'Help'
 });
