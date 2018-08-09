@@ -1,0 +1,225 @@
+Pragma: no-cache
+Apim-Request-Id: 5e6e84ac-9492-494b-a5c8-5770faab9153
+Request-Id: 5e6e84ac-9492-494b-a5c8-5770faab9153
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Request-Context: appId=cid-v1:26a3540d-a02a-4998-a060-715488fd769b
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-store, proxy-revalidate, no-cache, max-age=0, private
+Date: Thu, 09 Aug 2018 20:35:19 GMT
+Content-Length: 4450
+Content-Disposition: attachment; filename="Iris Support Test V1.json"
+Content-Type: application/json
+
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "Iris Support Test V1",
+  "desc": "This is the first test of using LUIS for support.",
+  "culture": "en-us",
+  "intents": [{
+      "name": "Greeting"
+    },
+    {
+      "name": "Howto"
+    },
+    {
+      "name": "Lookup"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "TroubleShoot"
+    }
+  ],
+  "entities": [{
+    "name": "Segmentation",
+    "roles": [
+      "Segment",
+      "Targetedaudience",
+      "Segmentation",
+      "Reciever",
+      "Audiance"
+    ]
+  }],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [{
+      "text": "aloha",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "campaign not sending email",
+      "intent": "TroubleShoot",
+      "entities": []
+    },
+    {
+      "text": "campaign report",
+      "intent": "Lookup",
+      "entities": []
+    },
+    {
+      "text": "coffee?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you have a cat?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "google",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hallo",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello iris team",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi iris support",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how to change my segmentation",
+      "intent": "Howto",
+      "entities": []
+    },
+    {
+      "text": "how to set up my campaign",
+      "intent": "Howto",
+      "entities": []
+    },
+    {
+      "text": "how to set up my segmentation",
+      "intent": "Howto",
+      "entities": []
+    },
+    {
+      "text": "how was my campaing 12345",
+      "intent": "Lookup",
+      "entities": []
+    },
+    {
+      "text": "how's weather today",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need help with a campaign",
+      "intent": "TroubleShoot",
+      "entities": []
+    },
+    {
+      "text": "lookup campaign",
+      "intent": "Lookup",
+      "entities": []
+    },
+    {
+      "text": "magic",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "my interaction has problem",
+      "intent": "TroubleShoot",
+      "entities": []
+    },
+    {
+      "text": "my segmentation size is wrong",
+      "intent": "TroubleShoot",
+      "entities": []
+    },
+    {
+      "text": "what is marketing campaign",
+      "intent": "Howto",
+      "entities": []
+    },
+    {
+      "text": "what is the valid audience of segmentation 12345",
+      "intent": "Lookup",
+      "entities": []
+    },
+    {
+      "text": "what to do to fix my campaign",
+      "intent": "TroubleShoot",
+      "entities": []
+    },
+    {
+      "text": "what to do to set up my campaign",
+      "intent": "Howto",
+      "entities": []
+    },
+    {
+      "text": "what's movie last night",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what's my segmentaiton data",
+      "intent": "Lookup",
+      "entities": []
+    },
+    {
+      "text": "what's the open rate of my campaign",
+      "intent": "Lookup",
+      "entities": []
+    },
+    {
+      "text": "what's wrong with my ampaign set up",
+      "intent": "TroubleShoot",
+      "entities": []
+    },
+    {
+      "text": "what's your dog's name?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where can i check my campaign datay",
+      "intent": "Howto",
+      "entities": []
+    },
+    {
+      "text": "why did not my campaign go out",
+      "intent": "TroubleShoot",
+      "entities": []
+    },
+    {
+      "text": "why my segmentation size does not match with my query",
+      "intent": "TroubleShoot",
+      "entities": []
+    }
+  ]
+}
