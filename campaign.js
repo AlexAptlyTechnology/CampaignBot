@@ -43,7 +43,7 @@ var GoalOptions = [
 var CountryOptions = [
     "US",
     "EMEA",
-    "LATIN",
+    "LATAM",
     "GB",
     "FR",
     "CA"];
