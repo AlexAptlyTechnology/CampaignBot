@@ -147,3 +147,4 @@ typings/
 # Visual Studio files
 
 .vs/
+vim.exe.stackdump
