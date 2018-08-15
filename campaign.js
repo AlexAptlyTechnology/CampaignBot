@@ -57,6 +57,11 @@ var AudienceOptions = [
     "Race",
     "Household Size"];
 
+var dateRandomGenerator = function (rangeOfDays, startHour, hourRange) {
+    var today = new Date(Date.now());
+    return new Date(today.getYear() + 1900, today.getMonth(), today.getDate() + Math.random() * rangeOfDays, Math.random() * hourRange + startHour, Math.random() * 60)
+}
+
 module.exports = {
     searchCampaign: function (campaignResults) {
         return new Promise(function (resolve) {
@@ -72,6 +77,16 @@ module.exports = {
 
             // complete promise with a timer to simulate async response
             setTimeout(function () { resolve(campaign); }, 1000);
+        });
+    },
+    searchWiki: function (wikiPage) {
+        return new Promise(function (resolve) {
+
+            // creating this so that eventually we might actually search in a Wiki
+            var wikiPage = 'http://www.iriswiki.com';
+
+            // complete promise with a timer to simulate async response
+            setTimeout(function () { resolve(wikiPage); }, 1000);
         });
     },
 };

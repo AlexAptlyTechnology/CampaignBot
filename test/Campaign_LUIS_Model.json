@@ -1,23 +1,11 @@
-Pragma: no-cache
-Apim-Request-Id: 5e6e84ac-9492-494b-a5c8-5770faab9153
-Request-Id: 5e6e84ac-9492-494b-a5c8-5770faab9153
-Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-Request-Context: appId=cid-v1:26a3540d-a02a-4998-a060-715488fd769b
-X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-Cache-Control: no-store, proxy-revalidate, no-cache, max-age=0, private
-Date: Thu, 09 Aug 2018 20:35:19 GMT
-Content-Length: 4450
-Content-Disposition: attachment; filename="Iris Support Test V1.json"
-Content-Type: application/json
-
 {
   "luis_schema_version": "3.0.0",
   "versionId": "0.1",
   "name": "Iris Support Test V1",
   "desc": "This is the first test of using LUIS for support.",
   "culture": "en-us",
-  "intents": [{
+  "intents": [
+    {
       "name": "Greeting"
     },
     {
@@ -27,27 +15,45 @@ Content-Type: application/json
       "name": "Lookup"
     },
     {
+      "name": "CampaignLookup"
+    },
+    {
       "name": "None"
     },
     {
       "name": "TroubleShoot"
     }
   ],
-  "entities": [{
-    "name": "Segmentation",
-    "roles": [
-      "Segment",
-      "Targetedaudience",
-      "Segmentation",
-      "Reciever",
-      "Audiance"
-    ]
-  }],
+  "entities": [
+    {
+      "name": "WikiSearch",
+      "roles": []
+    },
+    {
+      "name": "CampaignID",
+      "roles": []
+    },
+    {
+      "name": "Segmentation",
+      "roles": [
+        "Segment",
+        "TargetedAudience",
+        "Segmentation",
+        "Receiver",
+        "Audience"
+      ]
+    }
+  ],
   "composites": [],
   "closedLists": [],
   "patternAnyEntities": [],
   "regex_entities": [],
-  "prebuiltEntities": [],
+  "prebuiltEntities": [
+    {
+      "name": "number",
+      "roles": []
+    }
+  ],
   "model_features": [],
   "regex_features": [],
   "patterns": [],
@@ -63,7 +69,7 @@ Content-Type: application/json
     },
     {
       "text": "campaign report",
-      "intent": "Lookup",
+      "intent": "CampaignLookup",
       "entities": []
     },
     {
@@ -79,11 +85,6 @@ Content-Type: application/json
     {
       "text": "google",
       "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "hallo",
-      "intent": "Greeting",
       "entities": []
     },
     {
@@ -114,22 +115,46 @@ Content-Type: application/json
     {
       "text": "how to change my segmentation",
       "intent": "Howto",
-      "entities": []
+      "entities": [
+        {
+          "entity": "WikiSearch",
+          "startPos": 6,
+          "endPos": 28
+        }
+      ]
     },
     {
       "text": "how to set up my campaign",
       "intent": "Howto",
-      "entities": []
+      "entities": [
+        {
+          "entity": "WikiSearch",
+          "startPos": 6,
+          "endPos": 24
+        }
+      ]
     },
     {
       "text": "how to set up my segmentation",
       "intent": "Howto",
-      "entities": []
+      "entities": [
+        {
+          "entity": "WikiSearch",
+          "startPos": 6,
+          "endPos": 28
+        }
+      ]
     },
     {
-      "text": "how was my campaing 12345",
-      "intent": "Lookup",
-      "entities": []
+      "text": "how was my campaign 2345",
+      "intent": "CampaignLookup",
+      "entities": [
+        {
+          "entity": "CampaignID",
+          "startPos": 10,
+          "endPos": 19
+        }
+      ]
     },
     {
       "text": "how's weather today",
@@ -143,7 +168,7 @@ Content-Type: application/json
     },
     {
       "text": "lookup campaign",
-      "intent": "Lookup",
+      "intent": "CampaignLookup",
       "entities": []
     },
     {
@@ -164,7 +189,13 @@ Content-Type: application/json
     {
       "text": "what is marketing campaign",
       "intent": "Howto",
-      "entities": []
+      "entities": [
+        {
+          "entity": "WikiSearch",
+          "startPos": 8,
+          "endPos": 25
+        }
+      ]
     },
     {
       "text": "what is the valid audience of segmentation 12345",
@@ -179,7 +210,13 @@ Content-Type: application/json
     {
       "text": "what to do to set up my campaign",
       "intent": "Howto",
-      "entities": []
+      "entities": [
+        {
+          "entity": "WikiSearch",
+          "startPos": 13,
+          "endPos": 31
+        }
+      ]
     },
     {
       "text": "what's movie last night",
@@ -193,7 +230,7 @@ Content-Type: application/json
     },
     {
       "text": "what's the open rate of my campaign",
-      "intent": "Lookup",
+      "intent": "CampaignLookup",
       "entities": []
     },
     {
@@ -207,12 +244,18 @@ Content-Type: application/json
       "entities": []
     },
     {
-      "text": "where can i check my campaign datay",
+      "text": "where can i check my campaign data",
       "intent": "Howto",
-      "entities": []
+      "entities": [
+        {
+          "entity": "WikiSearch",
+          "startPos": 11,
+          "endPos": 33
+        }
+      ]
     },
     {
-      "text": "why did not my campaign go out",
+      "text": "why did my campaign not go out",
       "intent": "TroubleShoot",
       "entities": []
     },
