@@ -148,3 +148,7 @@ typings/
 
 .vs/
 vim.exe.stackdump
+
+# Working folders
+
+test/
